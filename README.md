@@ -21,6 +21,8 @@ Here are the things that I want to implement first: <br>
  > - anschreien
  > - brüllen
  > - anbrüllen
+ > 
+ >that keywords are casesensetive
 
 <br>
 <br>
@@ -71,11 +73,3 @@ Here are the things that I want to implement first: <br>
 > at first the possibilitis gets showed, than the posibility gets choosen and than the the code from that possibility gets executet. (exact implementation is folloring)
 
 > after the last option has to be a dot.
-
-<br>
-<br>
-<br>
-
-## folloring packages are used in folloring Versions
-- no packages are used right now
-
