@@ -1,43 +1,42 @@
 # Deutsch
-The is the offical compiler for the Esolang (Esoteric programming language) "Deutsch". In that language you code like you would write a german text.
 
-Punctuation marks only have to be set where I have explicitly written that they have to be set.
+## Aufbau von README.md
+  - Zweck des Kompilers
+  - Funktionsweise des Kompilers
+  - Erledigte Umsetzung der Programmiersprache
+  - Noch ausstehende Umsetzung der Programmiersprache
+  - Funktionsweise von bestimmten Wörtern
 
-<br>
+## Zweck des Kompilers
+Das ist der offizielle Compiler von der Programmiersprache _Deutsch_. Der Kompiler sollte Therapeuten helfen, Patienten mit Schwirigkeiten beim Ausdruck, leichter zu therapiern.
 
-Here are the things that I want to implement first: <br>
+## Funktionsweise des Kompilers
+Der Dateiname mit dem Programmcode muss mit _.deu_ enden. Diese Datei wird mithilfe der Headerdatein im Ordner *Kompilieren* in einen C++ Code umgewandelt, welcher anschliesend in ein ausführbares Programm kompiliert wird.
 
-- for the output in the Terminal you need to write 
-  1. Some random things (german is the best option): "The thing you want to print on the terminal".
-  2. "The thing you want to print on the terminal", some random things.
-  3. "This thing gets printed", this thing not, "this thing get's printed again".
- > The double quotes and the dot at the end must be set, otherwice the code won't get compiled right. If you want to output a variable, or double quotes, you have to put double parentheses around them
+Wenn der Programcode erfolgreich kompiliert wurde, erscheint am Bildschirm eine Meldung welche besagt, dass sich der Patient richtig ausgedrückt hat.
 
- > If you want something in uppercase, for example a string from a variable, you write folloring keywords at example 1 bevore the first double quotes, at between the last double quotes and the dot and at example 3 between the comers:
- > - rufen
- > - schimpfen
- > - beschimpfen
- > - schreien
- > - anschreien
- > - brüllen
- > - anbrüllen
- > 
- >that keywords are casesensetive
+Es müssen nur dort Satzzeichen gesetzt werden wo diese Dokumentation es auch explizit verlangt, wobei es sich an die Regeln der deutschen Sprache orientiert.
 
-<br>
-<br>
-
-- for the while-Loop
-  - während
-  - solange
-  - während dieser Zeit
+## Erledigte Umsetzung der Programmiersprache
+ - Es sind noch keine abgewandelte Gramatik umgesetzt worden.
 
 
-<br>
-<br>
+## Noch ausstehende Umsetzung der Programmiersprache
 
-- for the if statement
-  - for the if
+### Ausgabe in der Komandozeile
+  1. Dieser Text wird **NICHT** auf der Komandozeile ausgegeben: "Dieser Text wird auf der Komandozeile ausgegeben".
+  2. "Dieser Text wird auf der Komandozeile ausgegeben", dieser Text wird **NICHT** auf der Komandozeile ausgegeben.
+  3. "Dieser Text wird auf der Komandozeile ausgegeben", dieser Text wird **NICHT** auf der Komandozeile ausgegeben, "Dieser Text wird auf der Komandozeile ausgegeben".
+> Die doppelten Anführungsstriche, die Beistriche außerhalb der Anführungsstriche und der Punkt außerhalb der Anführungsstriche müssen aus Gründen der deutschen Gramatik gesetzt werden. Wenn man 
+
+### Wiederholungen
+  - während [Beschreibung irgendeiner Handlung]; [Beschreibung einer anderen Handlung];;
+  - solange [Beschreibung irgendeiner Handlung]; [Beschreibung einer anderen Handlung];;
+  - während dieser Zeit von [Zahl] [Zeiteinheit], [Beschreibung einer Handlung];;
+> In der Programmiersprache _Deutsch_ müssen die Semekoloms und der Beistrich so gesetzt werden, da es sonst Probleme mit der Komelierung geben könnte.
+
+### Bedingte Verzweigungen
+  - Für das if
     - wenn
     - falls
     - angenommen, dass
@@ -47,7 +46,7 @@ Here are the things that I want to implement first: <br>
     - unter der Bedingung/Voraussetzung, dass
     - wenn das eintrifft
     - wenn das eintreffen sollte
-  - for the else
+  - Für das else
     - sonst
     - anderweitig
     - ansonsten
@@ -58,18 +57,103 @@ Here are the things that I want to implement first: <br>
     - widrigenfalls
     - entgegengesetztenfalls
     - sonst gäbe es noch die Möglichkeit, dass
+> Die Bedingte Verzweigung endet mit zwei hintereinander geschriebenen Simekolons, da die Umsetzung des Kompeliervorgangs eventuell nicht möglich ist
 
-<br>
-<br>
+ ### Auflistung von Möglichkeiten
+  - Es gibt folgende Möglichkeiten: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Es steht folgendes zur Auswahl: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Wir können folgendes machen: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Wir können es wie folgt machen: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Es gibt folgende Vorgehensweisen: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Uns stehen folgende Möglichkeiten offen: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
+  - Uns bieten sich nun folgende Möglichkeiten an: [Möglichkeit 1], [Möglichkeit 2] ... oder [Möglichkeit n].
 
-- for the switch statement
-  - Es gibt folgende Möglichkeiten: [possibility 1], [possibility 2] ... oder [possibility n].
-  - Es steht folgendes zur Auswahl: [possibility 1], [possibility 2] ... oder [possibility n].
-  - Wir können folgendes machen: [possibility 1], [possibility 2] ... oder [possibility n].
-  - Wir können es wie folgt machen: [possibility 1], [possibility 2] ... oder [possibility n].
-  - Es gibt folgende Vorgehensweisen: [possibility 1], [possibility 2] ... oder [possibility n].
-  - Uns stehen folgende Möglichkeiten offen: [possibility 1], [possibility 2] ... oder [possibility n]
-  - Uns bieten sich nun folgende Möglichkeiten an: [possibility 1], [possibility 2] ... oder [possibility n].
-> at first the possibilitis gets showed, than the posibility gets choosen and than the the code from that possibility gets executet. (exact implementation is folloring)
+> Zuerst müssen alle Optionen aufgezählt werden. Nach dieser Aufzählung wird eine Auswahl getroffen. Nach dieser Auswahl wird die ausgewählte Möglichkeit erklärt. (Beispiel folgt)
 
-> after the last option has to be a dot.
+> Nach der letzten Möglichkeit  muss ein Punkt stehen
+
+### Rechenarten
+
+- plus
+  - [erste Number]+[zweite Number]
+  - [erste Number]+[zweite Number].
+  - [erste Number]+[zweite Number]!
+  - [erste Number] + [zweite Number]
+  - [erste Number] + [zweite Number].
+  - [erste Number] + [zweite Number]!
+  - addiere zu [erste Number] [zweite Number]
+  - addiere zu [erste Number] [zweite Number].
+  - addiere zu [erste Number] [zweite Number]!
+  - Addiere zu [erste Number] [zweite Number]
+  - Addiere zu [erste Number] [zweite Number].
+  - Addiere zu [erste Number] [zweite Number]!
+  - [erste Number] plus [zweite Number]
+  - zähle zu [erste Number] nochmals [zweite Number] dazu
+  - gib zu [erste Number] nochmals [zweite Number] dazu
+  - zähle zu [erste Number] nochmals [zweite Number] dazu
+- minus
+  - [erste Number]-[zweite Number]
+  - [erste Number]-[zweite Number].
+  - [erste Number]-[zweite Number]!
+  - [erste Number] - [zweite Number]
+  - [erste Number] - [zweite Number].
+  - [erste Number] - [zweite Number]!
+  - Was ist die Differenz von [erste Number] und [zweite Number]?
+  - [erste Number] minus [zweite Number]
+  - ziehe von [erste Number] [zweite Number] ab
+  - ziehe von [erste Number] [zweite Number] ab.
+  - ziehe von [erste Number] [zweite Number] ab!
+  - Ziehe von [erste Number] [zweite Number] ab
+  - Ziehe von [erste Number] [zweite Number] ab.
+  - Ziehe von [erste Number] [zweite Number] ab!
+- mal
+  - [erste Number]*[zweite Number]
+  - [erste Number]*[zweite Number].
+  - [erste Number]*[zweite Number]!
+  - [erste Number]*[zweite Number]?
+  - [erste Number] * [zweite Number]
+  - [erste Number] * [zweite Number].
+  - [erste Number] * [zweite Number]!
+  - [erste Number] * [zweite Number]?
+  - [erste Number] mal [zweite Number]
+  - [erste Number] mal [zweite Number].
+  - [erste Number] mal [zweite Number]!
+  - [erste Number] mal [zweite Number]?
+  - multipliziere [erste Zahl] mit [zweite Zahl]
+  - multipliziere [erste Zahl] mit [zweite Zahl].
+  - multipliziere [erste Zahl] mit [zweite Zahl]!
+  - multipliziere [erste Zahl] mit [zweite Zahl]?
+  - Multipliziere [erste Zahl] mit [zweite Zahl]
+  - Multipliziere [erste Zahl] mit [zweite Zahl].
+  - Multipliziere [erste Zahl] mit [zweite Zahl]!
+  - Multipliziere [erste Zahl] mit [zweite Zahl]?
+- dividiert
+  - [erste Number]/[zweite Number]
+  - [erste Number]/[zweite Number].
+  - [erste Number]/[zweite Number]!
+  - [erste Number]/[zweite Number]?
+  - [erste Number] / [zweite Number]
+  - [erste Number] / [zweite Number].
+  - [erste Number] / [zweite Number]!
+  - [erste Number] / [zweite Number]?
+  - dividiere [erste Zahl] durch [zweite Zahl]
+  - dividiere [erste Zahl] durch [zweite Zahl].
+  - dividiere [erste Zahl] durch [zweite Zahl]!
+  - dividiere [erste Zahl] durch [zweite Zahl]?
+  - Dividiere [erste Zahl] durch [zweite Zahl]
+  - Dividiere [erste Zahl] durch [zweite Zahl].
+  - Dividiere [erste Zahl] durch [zweite Zahl]!
+  - Dividiere [erste Zahl] durch [zweite Zahl]?
+
+
+## Funktionsweise von bestimmten Wörtern
+
+### Ausgabe in der Komandozeile
+> Wenn man einen Text nur aus Großbuchstaben auf der Komandozeile ausgeben will, muss man folgende Wörter außerhalb der Klammern schreiben:
+> - rufen
+> - schimpfen
+> - beschimpfen
+> - schreien
+> - anschreien
+> - brüllen
+> - anbrüllen
