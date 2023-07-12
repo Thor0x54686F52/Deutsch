@@ -15,4 +15,6 @@
 #ifndef compile_HPP
 #define compile_HPP
 
+void Kompilieren(std::string Dateiname);
+
 #endif

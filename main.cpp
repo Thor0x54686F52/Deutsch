@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
       std::cout << "Das ist kein gültiger Dateiname. Der Dateiname sollte wie folgendes Beispiel aussehen: Dateiname.deu" << std::endl;
       return 0;
    }
+   Kompilieren(argv[1]);
    return 0;
 }
 
