@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26.1)
+cmake_minimum_required(VERSION 3.22.1)
 
 add_library(Kompilieren Kompilieren/kompilieren.hpp Kompilieren/kompilieren.cpp)
 add_library(Addition Kompilieren/Berechnungen/Addition/Addition.hpp Kompilieren/Berechnungen/Addition/Addition.cpp)

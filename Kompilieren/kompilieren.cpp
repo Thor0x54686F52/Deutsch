@@ -10,6 +10,7 @@ void Kompilieren(std::string Dateiname) {
       if(eingabedatei.is_open()) {
          std::getline(eingabedatei, text, '\0');
          Ausgabe(text);
+         Eingabe(text);
          eingabedatei.close();
       }
    }
