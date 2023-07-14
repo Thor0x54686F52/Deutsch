@@ -16,5 +16,10 @@ std::string Schleife(std::string Text) { //Muss noch geschaut werden wie die Bed
       }
       text += "}";
    }
+   if((Text.find("solange") < Text.size() || Text.find("Solange") < Text.size()) && (Text.find("kleiner als") < Text.size() || Text.find("größer als") < Text.size())) {
+      text = "for(int i = "/*Größe des kleineren Werts*/"; i < "/*Größe des größeren Werts*/"; i++) {\n\
+         "/*Code muss noch gereriert werden*/"\n\
+      }";
+   }
    return text;
 }
