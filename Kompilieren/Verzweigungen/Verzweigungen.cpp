@@ -7,14 +7,14 @@ std::string Verzweigung(std::string Text) {
          if(Text[i] == '.') {
             break;
          }
-         if(Text[i] != ',') {
+         if(Text[i] == ',') {
             if(text.find("if") < text.size()) {
                text += "else ";
             }
-         }
-         else {
             text += ")";
             text += "if(";
+         }
+         else {
          }
       }
    }
