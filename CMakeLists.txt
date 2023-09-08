@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26.1)
+cmake_minimum_required(VERSION 3.22.1)
 
 add_library(Kompilieren Kompilieren/kompilieren.hpp Kompilieren/kompilieren.cpp)
 add_library(Addition Kompilieren/Berechnungen/Addition/Addition.hpp Kompilieren/Berechnungen/Addition/Addition.cpp)
@@ -8,6 +8,7 @@ add_library(Division Kompilieren/Berechnungen/Division/Division.hpp Kompilieren/
 add_library(Verzweigungen Kompilieren/Verzweigungen/Verzweigungen.hpp Kompilieren/Verzweigungen/Verzweigungen.cpp)
 add_library(Schleifen Kompilieren/Schleifen/Schleifen.hpp Kompilieren/Schleifen/Schleifen.cpp)
 add_library(Ein-Ausgabe Kompilieren/Ein-Ausgabe/Ein-Ausgabe.hpp Kompilieren/Ein-Ausgabe/Ein-Ausgabe.cpp)
+add_library(Kontrolle Kompilieren/Kontrolle/kontrolle.hpp Kompilieren/Kontrolle/kontrolle.cpp)
 
 project(Deutsch)
 
@@ -21,3 +22,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Division)
 target_link_libraries(${PROJECT_NAME} PRIVATE Verzweigungen)
 target_link_libraries(${PROJECT_NAME} PRIVATE Schleifen)
 target_link_libraries(${PROJECT_NAME} PRIVATE Ein-Ausgabe)
+target_link_libraries(${PROJECT_NAME} PRIVATE Kontrolle)

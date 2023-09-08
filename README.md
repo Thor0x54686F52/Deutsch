@@ -30,9 +30,8 @@ Es müssen nur dort Satzzeichen gesetzt werden wo diese Dokumentation es auch ex
 > Die doppelten Anführungsstriche, die Beistriche außerhalb der Anführungsstriche und der Punkt außerhalb der Anführungsstriche müssen aus Gründen der deutschen Gramatik gesetzt werden. Wenn man 
 
 ### Wiederholungen
-  - während [Beschreibung irgendeiner Handlung]; [Beschreibung einer anderen Handlung];;
-  - solange [Beschreibung irgendeiner Handlung]; [Beschreibung einer anderen Handlung];;
-  - während dieser Zeit von [Zahl] [Zeiteinheit], [Beschreibung einer Handlung];;
+  - während [Vergleich]; [Beschreibung einer anderen Handlung];;
+  - solange [Vergleich]; [Beschreibung einer anderen Handlung];;
 > In der Programmiersprache _Deutsch_ müssen die Semekoloms und der Beistrich so gesetzt werden, da es sonst Probleme mit der Komelierung geben könnte.
 
 ### Bedingte Verzweigungen
