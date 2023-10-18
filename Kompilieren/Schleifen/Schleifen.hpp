@@ -4,7 +4,8 @@
 #define Scleifen_HPP
 
 #include <string>
+#include <memory>
 
-std::string Schleife(std::string Text);
+void Schleife(const std::shared_ptr<std::string> Text, std::shared_ptr<std::string> Cppcode);
 
 #endif

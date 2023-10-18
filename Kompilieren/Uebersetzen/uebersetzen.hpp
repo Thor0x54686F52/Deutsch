@@ -4,7 +4,6 @@
 #define Uebersetzen_HPP
 
 #include <string>
-
-std::string Bedingung(std::string Text);
+#include <iostream>
 
 #endif

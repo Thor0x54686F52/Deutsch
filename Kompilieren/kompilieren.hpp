@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <memory>
 #include "Berechnungen/Addition/Addition.hpp"
 #include "Berechnungen/Subtraktion/Subtraktion.hpp"
 #include "Berechnungen/Multiplikation/Multiplikation.hpp"
@@ -15,6 +16,6 @@
 #include "Ein-Ausgabe/Ein-Ausgabe.hpp"
 #include "Kontrolle/kontrolle.hpp"
 
-void Kompilieren(std::string Dateiname);
+void Kompilieren(const std::shared_ptr<std::string> Dateiname);
 
 #endif

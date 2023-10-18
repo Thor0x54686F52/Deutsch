@@ -9,6 +9,7 @@ add_library(Verzweigungen Kompilieren/Verzweigungen/Verzweigungen.hpp Kompiliere
 add_library(Schleifen Kompilieren/Schleifen/Schleifen.hpp Kompilieren/Schleifen/Schleifen.cpp)
 add_library(Ein-Ausgabe Kompilieren/Ein-Ausgabe/Ein-Ausgabe.hpp Kompilieren/Ein-Ausgabe/Ein-Ausgabe.cpp)
 add_library(Kontrolle Kompilieren/Kontrolle/kontrolle.hpp Kompilieren/Kontrolle/kontrolle.cpp)
+add_library(Uebersetzen Kompilieren/Uebersetzen/uebersetzen.hpp Kompilieren/Uebersetzen/uebersetzen.cpp)
 
 project(Deutsch)
 
@@ -23,3 +24,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Verzweigungen)
 target_link_libraries(${PROJECT_NAME} PRIVATE Schleifen)
 target_link_libraries(${PROJECT_NAME} PRIVATE Ein-Ausgabe)
 target_link_libraries(${PROJECT_NAME} PRIVATE Kontrolle)
+target_link_libraries(${PROJECT_NAME} PRIVATE Uebersetzen)

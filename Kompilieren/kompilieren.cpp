@@ -1,30 +1,35 @@
 #include "kompilieren.hpp"
 
-void Kompilieren(std::string Dateiname) {
+void Kompilieren(const std::shared_ptr<std::string> Dateiname) {
    std::ifstream eingabedatei;
    std::ofstream ausgabedatei;
-   std::string text;
-   std::string Text = "#include <iostream>\n\
+   std::string text; // Text von der eingabedatei
+   std::string Cppcode = "#include <iostream>\n\
    \n\
    int main() {\n";
+   std::shared_ptr Adresse_von_Text = std::make_shared<std::string>(text);
+   std::shared_ptr Adresse_von_Code = std::make_shared<std::string>(Cppcode);
    try
    {
-      eingabedatei.open(Dateiname, std::ios::in);
+      eingabedatei.open(*Dateiname, std::ios::in);
       if(eingabedatei.is_open()) {
-         std::getline(eingabedatei, text, '\0');
-         if(Text_kontrolieren(text) == "") {
-            Ausgabe(text);
-            Eingabe(text);
+         std::getline(eingabedatei, *Adresse_von_Text, '\0');
+         std::cout << Text_kontrolieren(std::make_shared<std::string>(text)) << std::endl;
+         if(Text_kontrolieren(std::make_shared<std::string>(text))) {
+            Ausgabe(Adresse_von_Text, Adresse_von_Code);
+            Eingabe(Adresse_von_Text, Adresse_von_Code);
          }
-         std::cout << text.size() << std::endl;
          eingabedatei.close();
       }
-      Text = "return 0;\n\
+      Cppcode = "return 0;\n\
       }";
-      Formatieren(Text);
+      if(Code_kontrolieren(Adresse_von_Code)) {
+         Formatieren(Adresse_von_Code);
+      }
    }
    catch(const std::exception& e)
    {
+      eingabedatei.close();
       std::cerr << e.what() << '\n';
    }
 }
