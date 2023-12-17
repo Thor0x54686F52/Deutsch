@@ -8,6 +8,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 bool Text_kontrolieren(const std::shared_ptr<std::string> Text);
 /*
@@ -15,6 +16,12 @@ bool Text_kontrolieren(const std::shared_ptr<std::string> Text);
    true  => alle Tests bestanden
    false => mindestens einen Test nicht bestanden
 */
+
+bool Rechtschreib_Kontrolle(const std::shared_ptr<std::string> Text);
+
+bool Gramatik_Kontrolle(const std::shared_ptr<std::string> Text);
+
+bool Stil_Kontrolle(const std::shared_ptr<std::string> Text);
 
 bool Code_kontrolieren(const std::shared_ptr<std::string> CppCode);
 /*

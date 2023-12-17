@@ -9,12 +9,11 @@ void Kompilieren(const std::shared_ptr<std::string> Dateiname) {
    int main() {\n";
    std::shared_ptr Adresse_von_Text = std::make_shared<std::string>(text);
    std::shared_ptr Adresse_von_Code = std::make_shared<std::string>(Cppcode);
-   try
-   {
+   try {
       eingabedatei.open(*Dateiname, std::ios::in);
       if(eingabedatei.is_open()) {
-         std::getline(eingabedatei, *Adresse_von_Text, '\0');
-         std::cout << Text_kontrolieren(std::make_shared<std::string>(text)) << std::endl;
+         std::getline(eingabedatei, text, '\r'); // Liest die Ganze Datei in die Variable "eingabedatei" ein
+         //std::cout << Text_kontrolieren(std::make_shared<std::string>(text)) << std::endl;
          if(Text_kontrolieren(std::make_shared<std::string>(text))) {
             Ausgabe(Adresse_von_Text, Adresse_von_Code);
             Eingabe(Adresse_von_Text, Adresse_von_Code);
@@ -27,8 +26,7 @@ void Kompilieren(const std::shared_ptr<std::string> Dateiname) {
          Formatieren(Adresse_von_Code);
       }
    }
-   catch(const std::exception& e)
-   {
+   catch(const std::exception& e) {
       eingabedatei.close();
       std::cerr << e.what() << '\n';
    }

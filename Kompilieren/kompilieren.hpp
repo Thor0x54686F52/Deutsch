@@ -7,6 +7,9 @@
 #include <vector>
 #include <fstream>
 #include <memory>
+#include <string>
+#include <locale>
+#include <codecvt>
 #include "Berechnungen/Addition/Addition.hpp"
 #include "Berechnungen/Subtraktion/Subtraktion.hpp"
 #include "Berechnungen/Multiplikation/Multiplikation.hpp"
